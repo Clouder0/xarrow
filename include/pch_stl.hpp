@@ -1,4 +1,14 @@
 #pragma once
+#include <algorithm>
+#include <array>
+#include <cassert>
+#include <cstddef>
 #include <cstdint>
+#include <cstdlib>
+#include <cstring>
 #include <memory>
+#include <stdexcept>
 #include <type_traits>
+#include <utility>
+#include <variant>
+#include <vector>

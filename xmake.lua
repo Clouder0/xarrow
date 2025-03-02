@@ -15,6 +15,11 @@ if is_mode("debug") then
     set_symbols("debug")
     add_defines("DEBUG")
     set_optimize("none")
+    set_policy("build.sanitizer.address", true)
+    set_policy("build.sanitizer.undefined", true)
+    -- set_policy("build.sanitizer.memory", true)
+    -- set_policy("build.sanitizer.leak", true)
+    -- set_policy("build.sanitizer.thread", true)
 else
     add_defines("NDEBUG")
     set_optimize("fastest")
